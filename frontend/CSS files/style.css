@@ -13,12 +13,24 @@ html{
 }
 
 body{
-  font-family: PublicPixel;
-      background-image: url(/frontend/images/webpageBG_proto1.png);
+    font-family: PublicPixel;
+    background-image: url(/frontend/images/vap.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: 100vw;
+
+    color: #322738;
+    text-shadow: 1px 2px #ecebf0;
+
+}
+
+p {
+  margin: 0%;
+  padding: 0%;
+
+  text-align: center;
+  text-justify: center;
 }
 
 .container{
@@ -31,28 +43,113 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  box-shadow: 4px 4px 6px #322738;
+
+  gap: 16px;
+  padding: 24px;
+
+  width: 50vw;
+  font-size: 20px;
+
+  border-right: 2px solid #322738;
+  border-bottom: 2px solid #322738;
+  border-left: 2px solid #ecebf0;
+  border-top: 2px solid #c4b9c1;
+  border-radius: 12px;
+  background-color: #c4b9c1;
+  position: fixed;
+  z-index: 1000;
 }
 
 .main-box{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   align-items: center;
+
+  gap: 16px;
+  padding: 12px;
+  margin-top: 120px;
+  margin-bottom: 60px;
 }
 
 main{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  gap: 0px;
+
+  gap: 16px;
+  padding: 12px;
+  line-height: 25px;
+
+  box-shadow: 6px 6px 6px #322738;
+
+  border-radius: 8px;
+  border-right: 2px solid #322738;
+  border-bottom: 2px solid #322738;
+  border-left: 2px solid #ecebf0;
+  border-top: 2px solid #c4b9c1;
+
+  background-color: #c4b9c1;
+}
+
+main img{
+  border-radius: 12px;
+
+  border-right: 2px solid #322738;
+  border-bottom: 2px solid #322738;
+  border-left: 2px solid #ecebf0;
+  border-top: 2px solid #c4b9c1;
+
+  box-shadow: inset 2px 2px 2px #322738;
 }
 
 aside{
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  gap: 16px;
+  padding: 12px;
+
+  box-shadow: 6px 6px 6px #322738;
+
+  border-radius: 8px;
+  border-right: 2px solid #322738;
+  border-bottom: 2px solid #322738;
+  border-left: 2px solid #ecebf0;
+  border-top: 2px solid #c4b9c1;
+
+  background-color: #c4b9c1;
 }
 
 footer{
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  box-shadow: 4px 4px 6px #322738;
+
+  gap: 16px;
+  padding: 12px;
+
+  border-radius: 12px;
+  border-right: 2px solid #322738;
+  border-bottom: 2px solid #322738;
+  border-left: 2px solid #ecebf0;
+  border-top: 2px solid #c4b9c1;
+
+  background-color: #c4b9c1;
+}
+
+/* 8780cc */
+
+.box-title{
+  padding-bottom: 12px;
+}
+
+.box-par{
+  border-top: 1px solid #322738;
+  padding-top: 12px;
 }
