@@ -6,3 +6,53 @@ html{
     scroll-behavior: smooth;
     overflow: scroll;
 }
+
+@font-face {
+  font-family: PublicPixel;
+  src: url('/frontend/fonts/PublicPixel.ttf');
+}
+
+body{
+  font-family: PublicPixel;
+      background-image: url(/frontend/images/webpageBG_proto1.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-box{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
