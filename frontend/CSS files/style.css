@@ -18,7 +18,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100vw;
+    background-size: cover;
 
     color: #322738;
     text-shadow: 1px 2px #ecebf0;
@@ -46,8 +46,7 @@ header{
 
   box-shadow: 4px 4px 6px #322738;
 
-  gap: 16px;
-  padding: 24px;
+  padding: 12px;
 
   width: 50vw;
   font-size: 20px;
@@ -62,9 +61,15 @@ header{
   z-index: 1000;
 }
 
+header p{
+  padding: 20px;
+  background-color: #9496f4;
+  border-radius: 4px;
+}
+
 .main-box{
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
 
   gap: 16px;
@@ -145,11 +150,57 @@ footer{
 
 /* 8780cc */
 
-.box-title{
-  padding-bottom: 12px;
+#main-title{
+  margin-bottom: 10px;
+  background-color: #8780cc;
+  width: 27vw;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+#aside-title{
+  padding: 8px;
+  display: block;
+  width: 20vw;
+  background-color: #8780cc;
+  border-radius: 4px;
 }
 
 .box-par{
   border-top: 1px solid #322738;
   padding-top: 12px;
+}
+
+#aside-par{
+  border: none;
+  padding: 0%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  line-height: 32px;
+}
+
+#aside-par a{
+  font-size: 18px;
+  padding: 8px;
+  min-width: 12vw;
+  margin: 4px;
+
+  border-radius: 12px;
+  border-right: 2px solid #322738;
+  border-bottom: 2px solid #322738;
+  border-left: 2px solid #ecebf0;
+  border-top: 2px solid #c4b9c1;
+
+  color: #4b3f69;
+  background-color: #9496f4;
+}
+
+#aside-par a:hover{
+  background-color: #3e3e65;
+  color:#ecebf0;
+  text-shadow: 1px 2px #9496f4;
+  cursor: pointer;
 }
