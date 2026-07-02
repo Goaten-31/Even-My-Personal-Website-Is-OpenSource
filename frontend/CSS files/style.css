@@ -82,7 +82,6 @@ main{
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0px;
 
   gap: 16px;
   padding: 12px;
@@ -183,10 +182,15 @@ footer{
 }
 
 #aside-par a{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+
   font-size: 18px;
   padding: 8px;
-  min-width: 12vw;
   margin: 4px;
+  min-width: 12vw;
+  max-width: 12vw;
 
   border-radius: 12px;
   border-right: 2px solid #322738;
@@ -196,6 +200,8 @@ footer{
 
   color: #4b3f69;
   background-color: #9496f4;
+  box-shadow: 2px 2px 4px #322738;
+  filter: drop-shadow(1px 2px 2px #322738);
 }
 
 #aside-par a:hover{
@@ -203,4 +209,22 @@ footer{
   color:#ecebf0;
   text-shadow: 1px 2px #9496f4;
   cursor: pointer;
+}
+
+#aside-par a:active{
+
+  border-left: 2px solid #322738;
+  border-top: 2px solid #322738;
+  border-right: 2px solid #ecebf0;
+  border-bottom: 2px solid #c4b9c1;
+
+  transform: translateY(0.5px);
+}
+
+.drop-shadow{
+  filter: drop-shadow(1px 2px 2px #322738);
+}
+
+.drop-shadow:hover{
+  filter: drop-shadow(1px 2px 2px #ecebf0);
 }
