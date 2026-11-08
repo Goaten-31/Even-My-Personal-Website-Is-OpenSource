@@ -9,12 +9,12 @@ html{
 
 @font-face {
   font-family: PublicPixel;
-  src: url('/frontend/fonts/PublicPixel.ttf');
+  src: url('assets/fonts/PublicPixel.ttf');
 }
 
 body{
     font-family: PublicPixel;
-    background-image: url(/frontend/images/vap.png);
+    background-image: url(/assets/images/vap.webp);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -218,6 +218,8 @@ main img{
   border-top: 2px solid #c4b9c1;
   background-color: #c4b9c1;
 
+  box-shadow: 4px 4px 8px #322738;
+
   padding: 8px;
   margin: 16px;
 }
@@ -230,7 +232,7 @@ main img{
   background-color: #9496f4;
   padding: 6px;
   font-size: 22px;
-  min-width: 70vw;
+  min-width: 90vw;
 }
 
 .item-par{
